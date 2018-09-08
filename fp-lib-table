@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name z180)(type KiCad)(uri /home/anya/git/circuits/z180/z180)(options "")(descr ""))
+)

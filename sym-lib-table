@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name nosuz)(type Legacy)(uri /home/anya/code/kicad-lib/nosuz.lib)(options "")(descr ""))
+  (lib (name z180)(type Legacy)(uri ${KIPRJMOD}/z180.lib)(options "")(descr ""))
+)
