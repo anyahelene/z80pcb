@@ -43,7 +43,7 @@ P 5950 4350
 F 0 "U3" H 5950 4300 50  0000 C CNN
 F 1 "AS6C1008-55PCN" V 6250 4000 50  0000 C CNN
 F 2 "Package_DIP:DIP-32_W15.24mm_Socket" H 5950 4350 50  0001 C CNN
-F 3 "" H 5950 4350 50  0001 C CNN
+F 3 "https://www.alliancememory.com/wp-content/uploads/pdf/AS6C1008feb2007.pdf" H 5950 4350 50  0001 C CNN
 	1    5950 4350
 	1    0    0    -1  
 $EndComp
@@ -335,10 +335,6 @@ Wire Wire Line
 	2500 5450 2500 5750
 Wire Wire Line
 	2600 5450 2600 5750
-Wire Wire Line
-	2700 5450 2700 5750
-Wire Wire Line
-	2800 5450 2800 5750
 Wire Wire Line
 	2900 5450 2900 5750
 Wire Wire Line
@@ -757,14 +753,6 @@ Entry Wire Line
 Entry Wire Line
 	3700 5750 3800 5850
 Wire Wire Line
-	3700 5450 3700 5750
-Wire Wire Line
-	3600 5450 3600 5750
-Wire Wire Line
-	3500 5450 3500 5750
-Wire Wire Line
-	3400 5450 3400 5750
-Wire Wire Line
 	3200 5450 3200 5750
 Wire Wire Line
 	3100 5450 3100 5750
@@ -1119,8 +1107,8 @@ L Connector:USB_B_Micro J2
 U 1 1 5BA7E932
 P 6650 1950
 F 0 "J2" H 6400 2200 50  0000 C CNN
-F 1 "USB_POWER" H 6650 2300 50  0000 C CNN
-F 2 "Connector_USB:USB_Mini-B_Lumberg_2486_01_Horizontal" H 6800 1900 50  0001 C CNN
+F 1 "USB Micro-B 105017" H 6650 2300 50  0000 C CNN
+F 2 "Connector_USB:USB_Micro-B_Molex-105017-0001" H 6800 1900 50  0001 C CNN
 F 3 "~" H 6800 1900 50  0001 C CNN
 	1    6650 1950
 	1    0    0    -1  
@@ -1182,7 +1170,7 @@ L Device:Polyfuse F1
 U 1 1 5C32782B
 P 8350 1650
 F 0 "F1" V 8250 1650 50  0000 C CNN
-F 1 "500mA" V 8450 1650 50  0000 C CNN
+F 1 "650mA" V 8450 1650 50  0000 C CNN
 F 2 "Fuse:Fuse_Littlefuse_395Series" H 8400 1450 50  0001 L CNN
 F 3 "~" H 8350 1650 50  0001 C CNN
 	1    8350 1650
@@ -1315,7 +1303,7 @@ P 2000 6600
 F 0 "U5" H 2000 6200 50  0000 C CNN
 F 1 "DS1813" H 2000 6100 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 2000 6600 50  0001 C CNN
-F 3 "" H 2000 6600 50  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/DS1813.pdf" H 2000 6600 50  0001 C CNN
 	1    2000 6600
 	1    0    0    -1  
 $EndComp
@@ -1343,25 +1331,9 @@ F 3 "~" H 2450 6750 50  0001 C CNN
 	1    2450 6750
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R R1
-U 1 1 5C5C63F3
-P 1850 6300
-F 0 "R1" V 1600 6300 50  0000 C CNN
-F 1 "[1k]" V 1700 6300 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 1780 6300 50  0001 C CNN
-F 3 "~" H 1850 6300 50  0001 C CNN
-	1    1850 6300
-	0    1    1    0   
-$EndComp
 Connection ~ 2000 6300
 Wire Wire Line
 	2000 6300 2000 6350
-Wire Wire Line
-	1700 6300 1550 6300
-Connection ~ 1550 6300
-Wire Wire Line
-	1550 6300 1550 6250
 $Comp
 L Switch:SW_Push SW1
 U 1 1 5C5F84ED
@@ -1394,7 +1366,7 @@ L Device:R R3
 U 1 1 5C660719
 P 9000 1950
 F 0 "R3" V 8900 2000 50  0000 C CNN
-F 1 "330" V 9000 1950 50  0000 C CNN
+F 1 "330R" V 9000 1950 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 8930 1950 50  0001 C CNN
 F 3 "~" H 9000 1950 50  0001 C CNN
 	1    9000 1950
@@ -1402,8 +1374,6 @@ F 3 "~" H 9000 1950 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9200 1950 9150 1950
-Wire Wire Line
-	1550 6300 1550 6650
 Wire Wire Line
 	1300 2450 1700 2450
 Wire Wire Line
@@ -1493,7 +1463,7 @@ L 74xx_IEEE:74LS138 U1
 U 1 1 5D2711C0
 P 5200 2200
 F 0 "U1" H 5200 1350 50  0000 C CNN
-F 1 "74LS138" H 5200 1450 50  0000 C CNN
+F 1 "74HCT138" H 5200 1450 50  0000 C CNN
 F 2 "Package_DIP:DIP-16_W7.62mm" H 5200 2200 50  0001 C CNN
 F 3 "" H 5200 2200 50  0001 C CNN
 	1    5200 2200
@@ -1886,7 +1856,7 @@ L Mechanical:MountingHole_Pad MH1
 U 1 1 5C1C93B3
 P 8250 2050
 F 0 "MH1" H 8150 2000 50  0000 R CNN
-F 1 "MountingHole_Pad" H 8150 2100 50  0000 R CNN
+F 1 "M2" H 8150 2100 50  0000 R CNN
 F 2 "MountingHole:MountingHole_2.2mm_M2_Pad_Via" H 8250 2050 50  0001 C CNN
 F 3 "~" H 8250 2050 50  0001 C CNN
 	1    8250 2050
@@ -1898,7 +1868,7 @@ L Mechanical:MountingHole_Pad MH2
 U 1 1 5C1C9945
 P 9150 2400
 F 0 "MH2" H 9050 2350 50  0000 R CNN
-F 1 "MountingHole_Pad" H 9050 2450 50  0000 R CNN
+F 1 "M2" H 9050 2450 50  0000 R CNN
 F 2 "MountingHole:MountingHole_2.2mm_M2" H 9150 2400 50  0001 C CNN
 F 3 "~" H 9150 2400 50  0001 C CNN
 	1    9150 2400
@@ -1923,7 +1893,7 @@ L 74xx_IEEE:74LS138 U4
 U 1 1 5C2AC273
 P 10100 2800
 F 0 "U4" H 10100 1950 50  0000 C CNN
-F 1 "74LS138" H 10100 2050 50  0000 C CNN
+F 1 "74HCT138" H 10100 2050 50  0000 C CNN
 F 2 "Package_DIP:DIP-16_W7.62mm" H 10100 2800 50  0001 C CNN
 F 3 "" H 10100 2800 50  0001 C CNN
 	1    10100 2800
@@ -2128,7 +2098,7 @@ L Mechanical:MountingHole_Pad MH3
 U 1 1 5C9F1580
 P 9150 2200
 F 0 "MH3" H 9250 2300 50  0000 L CNN
-F 1 "MountingHole_Pad" H 9250 2200 50  0000 L CNN
+F 1 "M2" H 9250 2200 50  0000 L CNN
 F 2 "MountingHole:MountingHole_2.2mm_M2_Pad_Via" H 9150 2200 50  0001 C CNN
 F 3 "~" H 9150 2200 50  0001 C CNN
 	1    9150 2200
@@ -2174,7 +2144,7 @@ L Mechanical:MountingHole_Pad MH4
 U 1 1 5CA33BBE
 P 9250 2300
 F 0 "MH4" V 9200 2450 50  0000 L CNN
-F 1 "MountingHole_Pad" V 9250 2450 50  0000 L CNN
+F 1 "M2" V 9250 2450 50  0000 L CNN
 F 2 "MountingHole:MountingHole_2.2mm_M2_Pad_Via" H 9250 2300 50  0001 C CNN
 F 3 "~" H 9250 2300 50  0001 C CNN
 	1    9250 2300
@@ -2316,20 +2286,129 @@ Wire Bus Line
 Wire Bus Line
 	7650 6100 6350 6100
 Connection ~ 6350 6100
+$Comp
+L Graphic:Logo_Open_Hardware_Small oshw1
+U 1 1 5B967B1C
+P 10200 5850
+F 0 "oshw1" H 10200 6125 50  0001 C CNN
+F 1 "Logo_Open_Hardware_Small" H 10200 5625 50  0001 C CNN
+F 2 "Symbol:OSHW-Symbol_6.7x6mm_SilkScreen" H 10200 5850 50  0001 C CNN
+F 3 "~" H 10200 5850 50  0001 C CNN
+	1    10200 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Graphic:SYM_Flash_Small bird1
+U 1 1 5BA2340C
+P 10050 4500
+F 0 "bird1" V 9960 4500 50  0001 C CNN
+F 1 "bird_logo" V 10140 4500 50  0001 C CNN
+F 2 "z180:bird" H 10050 4475 50  0001 C CNN
+F 3 "~" H 10450 4400 50  0001 C CNN
+	1    10050 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Graphic:SYM_Flash_Small discovery1
+U 1 1 5BA244A6
+P 9650 4800
+F 0 "discovery1" V 9560 4800 50  0001 C CNN
+F 1 "discovery_logo" V 9740 4800 50  0001 C CNN
+F 2 "z180:discovery" H 9650 4775 50  0001 C CNN
+F 3 "~" H 10050 4700 50  0001 C CNN
+	1    9650 4800
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	4800 5200 5250 5200
+	1550 6250 1550 6650
+$Comp
+L Device:R_Pack04 RN1
+U 1 1 5BBF48CA
+P 2700 6200
+F 0 "RN1" H 2400 6150 50  0000 R CNN
+F 1 "10k x4" H 2400 6200 50  0000 R CNN
+F 2 "Resistor_SMD:R_Array_Convex_4x1206" V 2975 6200 50  0001 C CNN
+F 3 "https://www.farnell.com/datasheets/73964.pdf" H 2700 6200 50  0001 C CNN
+	1    2700 6200
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Pack04 RN2
+U 1 1 5BBF4A51
+P 3500 6200
+F 0 "RN2" H 3200 6250 50  0000 R CNN
+F 1 "10k x4" H 3200 6200 50  0000 R CNN
+F 2 "Resistor_SMD:R_Array_Convex_4x1206" V 3775 6200 50  0001 C CNN
+F 3 "https://www.farnell.com/datasheets/73964.pdf" H 3500 6200 50  0001 C CNN
+	1    3500 6200
+	-1   0    0    -1  
+$EndComp
 Wire Wire Line
-	2000 5450 2000 6300
-Wire Bus Line
-	4550 4350 4550 5850
+	2600 6000 2000 6000
+Connection ~ 2000 6000
+Wire Wire Line
+	2000 6000 2000 6300
+NoConn ~ 2900 6000
+$Comp
+L power:+5V #PWR0117
+U 1 1 5BC6EDE8
+P 3150 6400
+F 0 "#PWR0117" H 3150 6250 50  0001 C CNN
+F 1 "+5V" H 3200 6600 50  0000 C CNN
+F 2 "" H 3150 6400 50  0001 C CNN
+F 3 "" H 3150 6400 50  0001 C CNN
+	1    3150 6400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 6400 2700 6400
+Connection ~ 2700 6400
+Wire Wire Line
+	2700 6400 2800 6400
+Wire Wire Line
+	3150 6400 3400 6400
+Connection ~ 3400 6400
+Wire Wire Line
+	3400 6400 3500 6400
+Connection ~ 3500 6400
+Wire Wire Line
+	3500 6400 3600 6400
+Connection ~ 3600 6400
+Wire Wire Line
+	3600 6400 3700 6400
+Wire Wire Line
+	2800 6400 2900 6400
+Connection ~ 2800 6400
+Connection ~ 3150 6400
+Connection ~ 2900 6400
+Wire Wire Line
+	2900 6400 3150 6400
+Wire Wire Line
+	3400 5450 3400 6000
 Wire Wire Line
 	6950 5050 7400 5050
 Wire Bus Line
+	4550 4350 4550 5850
+Wire Wire Line
+	4800 5200 5250 5200
+Wire Wire Line
+	2000 5450 2000 6000
+Wire Wire Line
+	2700 5450 2700 6000
+Wire Bus Line
 	7000 5050 7000 5850
+Wire Wire Line
+	3700 5450 3700 6000
 Wire Bus Line
 	7650 6100 7650 6400
 Wire Bus Line
 	6350 6100 6350 6400
+Wire Wire Line
+	2800 5450 2800 6000
+Wire Wire Line
+	3500 5450 3500 6000
+Wire Wire Line
+	3600 5450 3600 6000
 Wire Bus Line
 	6000 6050 6000 6400
 Wire Bus Line
@@ -2345,32 +2424,21 @@ Wire Bus Line
 Wire Bus Line
 	9300 2450 9300 3250
 Wire Bus Line
-	4550 5950 8400 5950
-Wire Bus Line
-	8500 3550 8500 5850
+	4450 4350 4450 5250
 Wire Bus Line
 	6850 3400 6850 5850
 Wire Bus Line
-	4450 4350 4450 5250
+	8500 3550 8500 5850
+Wire Bus Line
+	4550 5950 8400 5950
 Wire Bus Line
 	7100 3550 7100 4950
 Wire Bus Line
-	1350 5850 4450 5850
-Wire Bus Line
 	1450 3450 1450 5400
 Wire Bus Line
-	5000 3400 5000 5850
+	1350 5850 4450 5850
 Wire Bus Line
 	4450 2350 4450 4250
-$Comp
-L Graphic:Logo_Open_Hardware_Small #LOGO1
-U 1 1 5B967B1C
-P 9850 5950
-F 0 "#LOGO1" H 9850 6225 50  0001 C CNN
-F 1 "Logo_Open_Hardware_Small" H 9850 5725 50  0001 C CNN
-F 2 "" H 9850 5950 50  0001 C CNN
-F 3 "~" H 9850 5950 50  0001 C CNN
-	1    9850 5950
-	1    0    0    -1  
-$EndComp
+Wire Bus Line
+	5000 3400 5000 5850
 $EndSCHEMATC
