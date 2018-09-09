@@ -1899,7 +1899,7 @@ U 1 1 5C1C9945
 P 9150 2400
 F 0 "MH2" H 9050 2350 50  0000 R CNN
 F 1 "MountingHole_Pad" H 9050 2450 50  0000 R CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_Pad_Via" H 9150 2400 50  0001 C CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2" H 9150 2400 50  0001 C CNN
 F 3 "~" H 9150 2400 50  0001 C CNN
 	1    9150 2400
 	-1   0    0    1   
@@ -2053,7 +2053,7 @@ L Device:C_Small C20
 U 1 1 5C622AE2
 P 10000 3300
 F 0 "C20" V 9750 3300 50  0000 C CNN
-F 1 "C_Small" V 9850 3300 50  0000 C CNN
+F 1 "0.1µF" V 9850 3300 50  0000 C CNN
 F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 10000 3300 50  0001 C CNN
 F 3 "~" H 10000 3300 50  0001 C CNN
 	1    10000 3300
@@ -2315,6 +2315,7 @@ Wire Bus Line
 	6350 6050 6350 6100
 Wire Bus Line
 	7650 6100 6350 6100
+Connection ~ 6350 6100
 Wire Wire Line
 	4800 5200 5250 5200
 Wire Wire Line
@@ -2361,5 +2362,15 @@ Wire Bus Line
 	5000 3400 5000 5850
 Wire Bus Line
 	4450 2350 4450 4250
-Connection ~ 6350 6100
+$Comp
+L Graphic:Logo_Open_Hardware_Small #LOGO1
+U 1 1 5B967B1C
+P 9850 5950
+F 0 "#LOGO1" H 9850 6225 50  0001 C CNN
+F 1 "Logo_Open_Hardware_Small" H 9850 5725 50  0001 C CNN
+F 2 "" H 9850 5950 50  0001 C CNN
+F 3 "~" H 9850 5950 50  0001 C CNN
+	1    9850 5950
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
